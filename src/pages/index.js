@@ -8,10 +8,11 @@ import RecipeList from './qcomps/recipes'
 import Gallery from './components/state'
 import FeedbackForm from './qcomps/thankYouCrash'
 import Form from './qcomps/stuckForm'
+import RequestTracker from './qcomps/shoppingCart'
 export default function Home() {
   return (
     <div className={styles.main}>
-        <FeedbackForm />
+        <RequestTracker />
     </div>
   )
 }
