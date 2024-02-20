@@ -11,6 +11,13 @@ export default function List() {
     initialArtists
   );
 
+  function remove(idx) {
+    let newarr = [...artists]
+    newarr.splice(idx, 1);
+    newarr = newarr.map((a, index) => {return {...a, id: index}});
+    setArtists(newarr);
+  } 
+
   return (
     <>
       <h1>Inspiring sculptors:</h1>
@@ -19,7 +26,7 @@ export default function List() {
           <li key={artist.id}>
             {artist.name}{' '}
             <button onClick={() => {
-              artists.splice(artist.id, 1)
+              remove(artist.id);              
             }}>
               Delete
             </button>
