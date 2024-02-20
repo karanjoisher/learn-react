@@ -10,10 +10,11 @@ import Form from './qcomps/stuckForm'
 import RequestTracker from './qcomps/shoppingCart'
 import Scoreboard from './qcomps/updObjectsForm'
 import List from './qcomps/artistsRemoveArr'
+import BucketList from './qcomps/arrObj'
 export default function Home() {
   return (
     <div className={styles.main}>
-        <List />
+        <BucketList />
     </div>
   )
 }

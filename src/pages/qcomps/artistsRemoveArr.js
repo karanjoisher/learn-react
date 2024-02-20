@@ -12,7 +12,7 @@ export default function List() {
   );
 
   function remove(idx) {
-    let newarr = [...artists]
+    let newarr = [...artists];
     newarr.splice(idx, 1);
     newarr = newarr.map((a, index) => {return {...a, id: index}});
     setArtists(newarr);
